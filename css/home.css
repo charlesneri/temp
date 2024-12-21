@@ -1,0 +1,76 @@
+body {
+    background-color: rgb(39, 39, 39);
+    margin: 0%;
+    padding: 0%;
+  }
+  .vertical-menu a {
+    background-color: #eee; /* Grey background color */
+    color: black; /* Black text color */
+    display: block; /* Make the links appear below each other */
+    padding: 12px; /* Add some padding */
+    text-decoration: none; /* Remove underline from links */
+  }
+  
+  .vertical-menu a:hover {
+    background-color: #ccc; /* Dark grey background on mouse-over */
+  }
+  .vertical-menu a.active {
+    background-color: #04aa6d; /* Add a green color to the "active/current" link */
+    color: white;
+  }
+  
+  .vertical-menu {
+    border-radius: 3%;
+    background-color: #eee;
+    height: 100%;
+  }
+  
+  #search {
+    border-radius: 2%;
+    margin-top: 40%;
+    margin-left: 50%;
+    width:  20rem;
+    height: 2rem;
+    border-radius: 3%;
+    text-indent: 2%;
+    padding-right: 10%;
+  }
+
+   #search-btn{
+    position: absolute;
+    left: 490px;
+    top: 90%;
+    transform: translateY(-50%);
+    font-size: 18px;
+    color: #717171;
+    cursor: pointer;
+  }
+  /*editable*/
+
+  .recent-act{
+
+    margin-left: 30%;
+    color: #eee;
+    padding-bottom: 2%;
+  }
+  .wrapper{
+    display: inline-flex;
+    margin-left: 25%;
+    gap: 15%;
+  }
+  .col-1,.col-2{
+    width: 20rem;
+  
+  }
+  .col-1{
+    
+    border-radius: 5%;
+   
+  }
+  .col-2{
+  
+    border-radius: 5%;
+  }
+  .stock{
+    font-size: 2rem;
+  }

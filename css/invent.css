@@ -1,0 +1,218 @@
+body {
+  background-color: rgb(39, 39, 39);
+  margin: 0%;
+  padding: 0%;
+  display: block;
+}
+.vertical-menu a {
+  background-color: #eee; /* Grey background color */
+  color: black; /* Black text color */
+  display: block; /* Make the links appear below each other */
+  padding: 12px; /* Add some padding */
+  text-decoration: none; /* Remove underline from links */
+}
+.container.mains {
+  margin-left: 0%;
+  padding-left: 0%;
+}
+.vertical-menu {
+  border-radius: 3%;
+  background-color: #eee;
+  height: 100%;
+  padding-bottom: 100%;
+}
+.main-layout {
+  display: flex; /* Aligns child elements (section and main) horizontally */
+  height: 100vh; /* Full viewport height */
+}
+
+section {
+  flex: 0 0 20%; /* Fixed width for the section containing vertical menu */
+}
+main {
+  flex: 1; /* Allows the main section to take up remaining space */
+}
+
+#search {
+  border-radius: 2%;
+  margin-top: 40%;
+  margin-left: 50%;
+  width: 20rem;
+  height: 2rem;
+  border-radius: 3%;
+  text-indent: 2%;
+  padding-right: 10%;
+}
+.search-icon {
+  position: absolute;
+  left: 450px;
+  top: 90%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #717171;
+  pointer-events: none;
+}
+
+div.product-section {
+  margin-left: 10%;
+  background-color: #eee;
+  border-radius: 3%;
+}
+
+h1 {
+  color: #434040;
+  font-size: 1.5rem;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 900;
+  letter-spacing: 0.2rem;
+  padding: 2%;
+}
+.logo img {
+  width: 10%;
+  margin-left: 10%;
+}
+
+label.dragon {
+  color: #514f4f;
+  display: inline-flex;
+}
+.drag {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.drags,
+.drags1,
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px; /* Space between fields */
+}
+
+form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px; /* Space between the columns */
+  justify-content: space-between;
+}
+
+.drags {
+  width: 30%; /* Each column takes up 45% of the form width */
+  display: flex;
+  align-items: justify;
+  gap: 10px;
+}
+
+.drags1,
+.butto {
+  width: 25%; /* Full-width for separation */
+  text-align: left; /* Center buttons and display content */
+}
+
+.butto {
+  display: flex;
+  padding: 2%;
+  gap: 5%;
+  margin-left: 20%;
+}
+/* Styling inputs and selects */
+input[type="text"],
+input[type="number"],
+select {
+  width: 50%;
+  padding: 3px;
+  margin-top: 5px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+button {
+  padding: 5px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  background-color: #434040;
+  color: white;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3;
+}
+
+/* Additional styles for button div */
+.butto input[type="reset"],
+.butto input[type="submit"],
+.butto button {
+  width: auto;
+  margin: 0 10px;
+  display: inline-block;
+}
+
+.butto a {
+  text-decoration: none;
+  color: inherit;
+}
+
+#scan,
+label.scan,
+#bar {
+  width: 50%;
+}
+.drags.mybar {
+  margin-left: 35%;
+}
+#result-display {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+  text-indent: 5%;
+  border: 1px solid black;
+  margin-left: -20%;
+}
+
+#result-display {
+  width: 50%;
+}
+select {
+  width: 40%;
+  padding: 0%;
+}
+/*example*/
+#scanner-container {
+  width: 100%;
+  max-width: 500px; /* Limits the width for better responsiveness */
+  margin: 20px auto; /* Center the container */
+  text-align: center; /* Center the content */
+  background-color: #f4f4f4; /* Light background color */
+  border-radius: 8px; /* Rounded corners */
+  padding: 20px; /* Padding for spacing */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+#barcode-video {
+  width: 100%; /* Makes the video responsive */
+  max-height: 300px; /* Limit video height */
+  border-radius: 8px; /* Rounded corners for video */
+}
+
+#bar {
+  margin-top: 15px; /* Space between video and input field */
+  padding: 10px; /* Padding for input field */
+  width: 100%; /* Makes input field take full width */
+  max-width: 400px; /* Limit max width */
+  font-size: 16px; /* Increase font size */
+  border: 2px solid #ccc; /* Light border */
+  border-radius: 8px; /* Rounded corners for input */
+  outline: none; /* Remove outline on focus */
+}
+
+#bar:focus {
+  border-color: #4caf50; /* Green border color on focus */
+}
+
+
