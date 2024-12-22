@@ -109,23 +109,17 @@ table {
   padding-bottom: 100%;
   overflow-y: auto;
 }
-.paybtn {
-        display: flex;
-        justify-content: center; /* Centers children horizontally */
-        padding-top: 25%;
-        flex-direction:row;   
+#paybtns,
+.button-pay {
+  position: absolute;
+  bottom: 0;
 }
 
-.buttons-pay {
-    width:100%;
- align-items: center;
-  display: inline-block;
-  
-
+.pay,
+.cancel {
+  width: 100%;
 }
-.buttons-pay .pay,
-.buttons-pay .cancel {
-    display: flex;
-    justify-content: center;
-    width: 100%; /* Ensure the container spans the width */
+.pay-cancel {
+  display: inline-flex;
+  flex-wrap: nowrap;
 }
